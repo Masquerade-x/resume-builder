@@ -44,7 +44,7 @@ export default function Experience() {
               marginLeft: 20,
               opacity: 1,
               fontWeight: 'bold',
-              color: 'black',
+              color: 'white',
               fontSize: 23,
             }}>
             {i.companyName}
@@ -70,9 +70,9 @@ export default function Experience() {
   };
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: 'black'}}>
       <ImageBackground
-        source={require('../assets/images/pencil3.png')}
+        source={require('../assets/images/redTriangle.png')}
         imageStyle={{opacity: 0.9}}
         style={styles.image}>
         <View
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   expDataViewText: {
     padding: 10,
     margin: 20,
-    backgroundColor: '#00A4CCFF',
+    backgroundColor: '#5c2a9d',
     borderRadius: 20,
     opacity: 0.8,
     shadowColor: 'black',
@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
   button: {
     alignSelf: 'flex-end',
     marginVertical: 10,
-    backgroundColor: '#00A4CCFF',
+    backgroundColor: '#5c2a9d',
     position: 'absolute',
     bottom: 0,
     right: responsiveWidth(2),
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   openButton: {
-    backgroundColor: '#F95700FF',
+    backgroundColor: '#5c2a9d',
     borderRadius: 20,
     padding: 10,
     marginVertical: 10,
@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
     opacity: 1,
     marginVertical: 10,
     textAlign: 'center',
-    backgroundColor: '#00A4CCFF',
+    backgroundColor: '#b51d4c',
     shadowColor: 'black',
     shadowOffset: {
       width: 0,
