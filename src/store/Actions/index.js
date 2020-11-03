@@ -3,6 +3,7 @@ import {
   SAVE_EDU_DATA,
   SAVE_EXP_DATA,
   SAVE_SKILL_DATA,
+  DELETE_EDU_DATA,
   DELETE_EXP_DATA,
   SAVE_PERSONAL_DATA,
   DELETE_PERSONAL_DATA,
@@ -21,6 +22,11 @@ export const deletePersonalData = (data) => ({
 export const saveEduData = (data) => ({
   type: SAVE_EDU_DATA,
   payload: data,
+});
+
+export const deleteEduData = (id) => ({
+  type: DELETE_EDU_DATA,
+  payload: id,
 });
 
 export const saveExpData = (data) => ({

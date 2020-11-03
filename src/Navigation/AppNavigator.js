@@ -6,6 +6,7 @@ import CreateScreen from '../screens/CreateScreen';
 import PersonalDetails from '../screens/PersonalDetails';
 import Education from '../screens/Education';
 import Experience from '../screens/Experience';
+import Template from '../screens/Template';
 import Skills from '../screens/Skills';
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Education" component={Education} />
         <Stack.Screen name="Experience" component={Experience} />
         <Stack.Screen name="Skills" component={Skills} />
+        <Stack.Screen name="Template" component={Template} />
       </Stack.Navigator>
     </NavigationContainer>
   );

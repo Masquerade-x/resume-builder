@@ -31,6 +31,7 @@ export default function Experience() {
   const [JobTitle, setJobTitle] = useState('');
   const dispatch = useDispatch();
   const experienceData = useSelector((state) => state.expData);
+  console.log(experienceData);
 
   const renderData = () => {
     return experienceData.map((i) => {
@@ -67,6 +68,9 @@ export default function Experience() {
     };
     dispatch(action.saveExpData(item));
     setModalVisible(!modalVisible);
+    setCompanyName('');
+    setExp('');
+    setJobTitle('');
   };
 
   return (

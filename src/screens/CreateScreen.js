@@ -53,6 +53,14 @@ export default function CreateScreen({navigation}) {
               onPress={() => navigation.navigate('Skills')}
             />
           </View>
+          <View style={styles.icons}>
+            <IconButton
+              icon="arrow"
+              color={'white'}
+              size={40}
+              onPress={() => navigation.navigate('Template')}
+            />
+          </View>
         </View>
       </ImageBackground>
     </SafeAreaView>

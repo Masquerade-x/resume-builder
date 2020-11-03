@@ -49,14 +49,6 @@ export default function HomeScreen({navigation}) {
           style={styles.iconImage}
         />
       </TouchableOpacity>
-
-      {/* <Button
-        icon="camera"
-        mode="contained"
-        color={'#5c2a9d'}
-        style={styles.btn}>
-        Start
-      </Button> */}
     </SafeAreaView>
   );
 }
@@ -65,6 +57,7 @@ const styles = StyleSheet.create({
   img: {
     width: responsiveWidth(100),
     height: responsiveHeight(50),
+    alignSelf: 'center',
   },
   iconImage: {
     height: responsiveHeight(18),

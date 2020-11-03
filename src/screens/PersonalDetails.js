@@ -73,9 +73,9 @@ export default function PersonalDetails() {
   };
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: 'black'}}>
       <ImageBackground
-        source={require('../assets/images/pencil4.png')}
+        source={require('../assets/images/quads.png')}
         style={styles.image}>
         <View
           style={{

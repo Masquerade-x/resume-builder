@@ -5,6 +5,7 @@ import {
   SAVE_SKILL_DATA,
   DELETE_SKILL_DATA,
   DELETE_EXP_DATA,
+  DELETE_EDU_DATA,
   SAVE_PERSONAL_DATA,
   DELETE_PERSONAL_DATA,
 } from '../Actions/types';
@@ -36,7 +37,16 @@ const rootReducer = (state = initialState, action) => {
     case SAVE_EDU_DATA: {
       return {
         ...state,
-        eduData: action.payload,
+        eduData: [...state.eduData, action.payload],
+      };
+    }
+    case DELETE_EDU_DATA: {
+      const filteredArray = state.eduData.filter(
+        (exp) => exp.id !== action.payload,
+      );
+      return {
+        ...state,
+        expData: filteredArray,
       };
     }
     case SAVE_EXP_DATA: {
