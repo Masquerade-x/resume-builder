@@ -18,7 +18,6 @@ export default function Template() {
     <SafeAreaView style={{flex: 1, flexDirection: 'row'}}>
       <View
         style={{
-          flexDirection: 'column',
           paddingHorizontal: 5,
           paddingVertical: 30,
         }}>
@@ -175,6 +174,18 @@ export default function Template() {
           />
         </View>
       </View>
+      <View style={styles.contact}>
+        <View style={{padding: 5}}>
+          <Text style={{fontSize: 20, color: '#3fa9f6'}}>Contact Details</Text>
+        </View>
+        <View style={{padding: 5}}>
+          <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
+            <Text style={{fontSize: 12}}>{personalData.email}</Text>
+            <Text style={{fontSize: 12}}>{personalData.address}</Text>
+            <Text style={{fontSize: 12}}>{personalData.phone}</Text>
+          </View>
+        </View>
+      </View>
     </SafeAreaView>
   );
 }
@@ -183,5 +194,16 @@ const styles = StyleSheet.create({
   img: {
     width: 180,
     height: 180,
+  },
+  contact: {
+    position: 'absolute',
+    bottom: responsiveHeight(10),
+    backgroundColor: 'white',
+    width: responsiveWidth(80),
+    left: 40,
+    borderRadius: 10,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: '#3fa9f6',
+    padding: 10,
   },
 });
