@@ -15,7 +15,8 @@ export default function Template() {
   const skillData = useSelector((state) => state.skillData);
 
   return (
-    <SafeAreaView style={{flex: 1, flexDirection: 'row'}}>
+    <SafeAreaView
+      style={{flex: 1, flexDirection: 'row', backgroundColor: 'white'}}>
       <View
         style={{
           paddingHorizontal: 5,
@@ -34,8 +35,8 @@ export default function Template() {
             }}
           />
           <View style={{marginTop: 8, marginBottom: 14}}>
-            <Text style={{fontSize: 24, color: '#3fa9f6'}}>
-              Software Engineeer
+            <Text style={{fontSize: 24, fontWeight: 'bold', color: '#3fa9f6'}}>
+              Software Engineer
             </Text>
           </View>
           <View
@@ -57,7 +58,7 @@ export default function Template() {
         <View>
           <View>
             <Text style={{fontWeight: 'bold', color: 'green', fontSize: 20}}>
-              Work BAckground
+              Work Background
             </Text>
           </View>
           <View
@@ -176,13 +177,21 @@ export default function Template() {
       </View>
       <View style={styles.contact}>
         <View style={{padding: 5}}>
-          <Text style={{fontSize: 20, color: '#3fa9f6'}}>Contact Details</Text>
+          <Text style={{fontSize: 20, fontWeight: 'bold', color: '#3fa9f6'}}>
+            Contact Details
+          </Text>
         </View>
         <View style={{padding: 5}}>
-          <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
-            <Text style={{fontSize: 12}}>{personalData.email}</Text>
-            <Text style={{fontSize: 12}}>{personalData.address}</Text>
-            <Text style={{fontSize: 12}}>{personalData.phone}</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+            <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+              {personalData.email}
+            </Text>
+            <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+              {personalData.address}
+            </Text>
+            <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+              {personalData.phone}
+            </Text>
           </View>
         </View>
       </View>

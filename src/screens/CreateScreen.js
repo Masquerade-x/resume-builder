@@ -55,7 +55,7 @@ export default function CreateScreen({navigation}) {
           </View>
           <View style={styles.icons}>
             <IconButton
-              icon="arrow"
+              icon="cat"
               color={'white'}
               size={40}
               onPress={() => navigation.navigate('Template')}
